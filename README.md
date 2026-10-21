@@ -20,11 +20,14 @@ The Half Adder performs binary addition of two 1-bit inputs.
 Project Structure
 
 verilog-design-verification/
+
+verilog-design-verification/
 ├── rtl/
 │   └── half_adder.v
 ├── tb/
 │   └── tb_half_adder.v
 └── README.md
+
 
 Verification Environment
 
@@ -35,11 +38,13 @@ Verification Environment
 
 Simulation Results
 
-A| B| Expected Sum| Expected Carry
-0| 0|       0     | 0
-0| 1|       1     | 0
-1| 0|       1     | 0
-1| 1|       0     | 1
+
+| A | B | Expected Sum | Expected Carry |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
 
 Result: The simulated outputs matched the expected Half Adder truth table for all four input combinations.
 
