@@ -99,6 +99,7 @@ Verification Environment
 - Testbench: Applies all eight input combinations and displays the outputs.
 
 Simulation Results
+Simulation Results
 
 A| B| Cin| Expected Sum| Expected Carry
 0| 0| 0| 0| 0
@@ -110,7 +111,7 @@ A| B| Cin| Expected Sum| Expected Carry
 1| 1| 0| 0| 1
 1| 1| 1| 1| 1
 
-Result: The simulated outputs matched the expected Full Adder truth table for all eight input combinations.
+Result: The simulated outputs matched the expected Full Adder truth table for all eight input combinations. matched the expected Full Adder truth table for all eight input combinations.
 
 Key Learning Outcomes
 
