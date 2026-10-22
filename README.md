@@ -69,46 +69,67 @@ Aspiring VLSI Design Verification Engineer, building strong fundamentals through
 
 
 
-# Full Adder Using Verilog HDL
+Project 2: Full Adder
 
-## 1. Project Overview
-This project implements a Full Adder circuit using Verilog HDL. The design performs binary addition of three 1-bit inputs and generates Sum and Carry outputs.
+Objective
 
-## 2. Objective
-To design, simulate, and verify a Full Adder using Verilog HDL and a testbench.
+Design and simulate a Full Adder using Verilog HDL and verify its outputs for all possible input combinations.
 
-## 3. Truth Table
+RTL Design
 
-| A | B | Cin | Sum | Cout |
-|---|---|-----|-----|------|
-| 0 | 0 |  0  |  0  |  0   |
-| 0 | 0 |  1  |  1  |  0   |
-| 0 | 1 |  0  |  1  |  0   |
-| 0 | 1 |  1  |  0  |  1   |
-| 1 | 0 |  0  |  1  |  0   |
-| 1 | 0 |  1  |  0  |  1   |
-| 1 | 1 |  0  |  0  |  1   |
-| 1 | 1 |  1  |  1  |  1   |
+The Full Adder performs binary addition of three 1-bit inputs: A, B, and Cin (Carry-in).
 
-## 4. Boolean Expressions
-- Sum = A XOR B XOR Cin
-- Carry Out = (A AND B) OR (B AND Cin) OR (A AND Cin)
+- Sum: A XOR B XOR Cin
+- Carry: (A AND B) OR (B AND Cin) OR (A AND Cin)
 
-## 5. Project Structure
-- rtl/ - Verilog RTL design
-- tb/ - Verilog testbench
+Project Structure
 
-## 6. Verification
-The testbench verifies all 8 possible input combinations and checks the Sum and Carry outputs.
+verilog-design-verification/
+├── rtl/
+│   └── full_adder.v
+├── tb/
+│   └── tb_full_adder.v
+└── README.md
 
-## 7. Tools Used
-- Verilog HDL
-- RTL Design
-- Simulation and Functional Verification
+Verification Environment
 
-## 8. Learning Outcomes
-- Understanding combinational logic design
-- Implementing a Full Adder using Verilog
-- Writing and running a testbench
-- Verifying digital circuit functionality
-- 
+- HDL: Verilog
+- Simulation Platform: EDA Playground
+- Simulator: Aldec Riviera-PRO
+- Testbench: Applies all eight input combinations and displays the outputs.
+
+Simulation Results
+
+A| B| Cin| Expected Sum| Expected Carry
+0| 0| 0| 0| 0
+0| 0| 1| 1| 0
+0| 1| 0| 1| 0
+0| 1| 1| 0| 1
+1| 0| 0| 1| 0
+1| 0| 1| 0| 1
+1| 1| 0| 0| 1
+1| 1| 1| 1| 1
+
+Result: The simulated outputs matched the expected Full Adder truth table for all eight input combinations.
+
+Key Learning Outcomes
+
+- Verilog module structure and gate-level modeling
+- Boolean expressions using XOR, AND, and OR gates
+- Module instantiation and port connections
+- Testbench development
+- Simulation execution and output analysis
+
+Future Learning Goals
+
+- Multiplexers, encoders, and decoders
+- 4-bit Ripple Carry Adder design and verification
+- Sequential circuit design and verification
+- SystemVerilog fundamentals
+- Advanced Design Verification concepts
+
+Career Goal
+
+Aspiring VLSI Design Verification Engineer, building strong fundamentals through consistent learning and hands-on projects.
+
+
