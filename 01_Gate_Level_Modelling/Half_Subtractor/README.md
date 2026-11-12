@@ -1,4 +1,4 @@
-# Half Subtractor – Gate-Level Modelling
+Half Subtractor – Gate-Level Modelling
 
 ## 1. Overview
 A Half Subtractor is a combinational logic circuit used to subtract one single-bit binary input from another.
