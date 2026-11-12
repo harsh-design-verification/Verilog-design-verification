@@ -22,6 +22,23 @@ Tools & Technologies
 - EDA Playground
 - Aldec Riviera-PRO
 - Git and GitHub
+### Projects
+
+#### 01. Gate-Level Modelling
+
+Implemented and verified combinational logic circuits using Verilog HDL.
+
+Projects:
+- Half Adder
+- Full Adder
+- Half Subtractor
+- Full Subtractor
+- 4-Bit Ripple Carry Adder
+- BCD Adder
+- 2-Bit Comparator
+- 4:1 Multiplexer
+
+[View Gate-Level Modelling Projects](./01_Gate_Level_Modelling/)
 
 My Goal
 
